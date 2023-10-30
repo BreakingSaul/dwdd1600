@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio Visual Enthusiasts: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn about the best way to experience music.">
+        <meta name="author" content="Jason Garcia">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@200;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+<body>
+    <!-- start the page header -->
+    <header>
+            <img src="Transparent-logo.png" alt="site logo" width="100px" height="99px">
+            <div>
+            <h1>Audio Visual Enthusiasts</h1>
+            <p>The Best Place to Learn About Sound and Picture Quality!</p>
+            </div>
+        </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="digital.html">Digital Audio</a></li>
+                <li><a href="physical.html">Physical Audio</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Guest Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+         <label>Last Name*<input type="text" name="lname" required></label>
+         <label>Email*<input type="email" name="email" required placeholder="@gmail.com"></label>
+            <label>Cell Phone (Optional)<input type="tel" name="phone"></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Contact Method</legend>
+                <label><input type="radio"
+                              name="method" value="mail">Email</label>  
+                <label><input type="radio"
+                              name="method" value="call">Phone Call</label>  
+                <label><input type="radio"
+                              name="method" value="text">Text</label>     
+            
+            </fieldset>
+            
+        <fieldset>
+        <legend>How Would You Rate Your Experience?</legend>
+            <label><input type="checkbox" name="poor" value="chosen">Poor</label>
+            <label><input type="checkbox" name="good" value="chosen">Good</label>
+            <label><input type="checkbox" name="amazing" value="chosen">Amazing</label>
+            
+            <label>How Likely Are You To Recommend to a Friend?
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="unlikely">Not likely</option>
+            <option value="likely">Likely</option>
+            <option value="verylikely">Very likely</option>
+            
+            </select>
+            </label>
+             </fieldset>
+            
+            <label>Anything Else We Should Know?
+            <textarea name="comments">We would love to know about your experience!</textarea>
+            </label>
+        <input type="submit" value="Submit">
+        </form>
+        <h2><a href="index.html">BACK HOME</a></h2>
+        <address>
+            Utah Valley University<br>
+            800 W University Pkwy<br>
+            Orem, UT 84058<br>
+            </address>
+                <a href="tel:8018638888">(801) 863-8888</a>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>&copy; 2023 &bull; Jason Garcia &bull; <a href="mailto:">Email Us</a>&bull;All Rights Reserved</footer>
+</body>
+</html>
