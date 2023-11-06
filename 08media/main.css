@@ -1,0 +1,264 @@
+/*-----My CSS Page-----*/
+*{box-sizing: border-box;}
+body {
+font-family: 'Onest', sans-serif;
+font-size: 16px;
+font-weight:300;
+margin:0;
+}
+header {
+    background-color:#f0f4fc;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header h1 {
+    margin: 0;
+    color:#4276cf;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+header div{
+    padding-left: 1vw;
+}
+header p {
+    margin: 0;
+    color: #024873;
+    letter-spacing: .05px;
+    font-weight:200;
+}
+/* small screens*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #fff;
+        color: #024873;
+    }
+    nav .active a{
+        background-color: #faf575 ;
+        background-image: linear-gradient(to bottom, #faf575, #fcba03);
+        color: white;
+    }
+}
+/*big screens*/
+@media only screen and (min-width: 601px) {
+
+nav {
+    background-color: #faf575;
+    border-top: solid 1px #E0E6E6;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #024873;
+    font-weight: 700;
+    display: block;
+    padding: 1.2rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+}
+nav a:hover {
+    color:#fff;
+}
+nav .active a {
+    border-bottom: solid 2px #eb4034;
+    }
+}
+
+/* stuff for main */
+main {
+    padding:1rem 2%
+}
+main h1 {
+    color:#eb4034;
+}
+main h2 {
+    color:#024873;
+    margin-bottom: .2rem;
+}
+main p {
+    color:#2f3133;
+    margin: 0 0 .8rem 0;
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+main ol {
+    padding: .5rem 3%;
+    background-color: #efefef;
+}
+main dl dt {
+    color: #0d1d4a;
+    font-weight: 700;
+    padding: .4rem;
+        background-color:#efefef;
+}
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+    font-size:48px;
+}
+main ul li {
+    line-height: 125%;
+        margin-bottom: .5rem;
+    font-size: 48px;
+}
+.soundwaves {
+    width: 100%;
+    margin: 0; 
+}
+.soundwaves img {
+    width: 100%;
+    height: auto;
+}
+main address {
+    font-style:normal;
+    background-color: #58c5ed;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+}
+main a {
+    color: #024873;
+}
+main a:hover {
+    color: #edb158;
+}
+figure.wrapped {
+    width:30%;
+    margin: 0 0 0 2%;
+    float:right;
+}
+figure.wrapped img {
+    width:100%;
+    height:auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+div.gallery{
+    display: flex;
+    flex-wrap:wrap;
+}
+div.gallery figure{
+    margin:.5rem 2% 0 0;
+}
+div.gallery figcaption{
+    text-align: center;
+    font-size:.8rem;
+    color: #0d1d4a;
+}
+div.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+div.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+}
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.myForm fieldset{
+    border:1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #43a0b6;
+    font-size: .8rem;
+    
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=mail], .myForm textarea, .myForm [type=tel]{
+    display:block;
+}
+.myForm [type=text], .myForm [type=mail],.myForm select, .myFormtextarea, .myForm [type=tel]{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    
+}
+.myForm textarea{
+   height: 6rem; 
+}
+.myForm  :required {
+    background-color: #b9d2fa;
+}
+.myForm [type=submit] {
+    background-color: #43a0b6;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: .5rem 0 1vw;
+}
+table.physicalvisual {
+    width:100%;
+    border-collapse: collapse;
+}
+table.physicalvisual th {
+    background-color: #3179AF;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.physicalvisual td {
+    color: black;
+    padding: .4rem 2vw;
+}
+table.physicalvisual tr:nth-child(odd){
+    background-color: #f7f7f7;
+}
+table.physicalvisual tr:hover {
+    background-color: #faf575;
+}
+    /* footer content */
+footer {
+    background-color: #f0f4fc;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear:both;
+}
+footer a {
+    color: #024873;
+}
+header , nav, main, footer {
+    max-width: 70rem;
+    margin: 0 auto;
